@@ -1,4 +1,3 @@
-// src/App.tsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from '../components/Home';
@@ -14,7 +13,7 @@ function App() {
         {/* Enlaces de navegación */}
         <nav>
           <Link to="/" className="mr-4">Inicio</Link>
-          <Link to="/cats">Ver Imagen de gatitos</Link>
+          <Link to="/cats"> Ver Imagen de gatitos</Link>
         </nav>
         <ErrorBoundary>
           <Routes>

@@ -1,9 +1,5 @@
-/* src/index.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-/* Tu CSS personalizado después de las directivas de Tailwind */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

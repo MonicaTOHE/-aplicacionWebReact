@@ -1,4 +1,3 @@
-// src/components/CatImage.tsx
 import React, { useEffect, useState } from 'react';
 
 const CatImage: React.FC = () => {
@@ -7,7 +6,6 @@ const CatImage: React.FC = () => {
   useEffect(() => {
     const fetchCatImage = async () => {
       try {
-        // URL para obtener una imagen de gato aleatoria
         setImageUrl('https://cataas.com/cat');
       } catch (error) {
         console.error('Error al obtener la imagen de gato:', error);
