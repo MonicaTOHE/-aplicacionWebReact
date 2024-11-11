@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",                           // Define la versión de JavaScript a la que se compilará
+    "lib": ["dom", "dom.iterable", "esnext"],     // Librerías incluidas (DOM y ECMAScript)
+    "allowJs": true,                              // Permite archivos JavaScript en el proyecto
+    "skipLibCheck": true,                         // Omite la comprobación de tipos en archivos de librerías
+    "esModuleInterop": true,                      // Habilita la interoperabilidad entre módulos CommonJS y ES
+    "allowSyntheticDefaultImports": true,         // Permite importaciones de módulos sin "default"
+    "strict": true,                               // Habilita la comprobación estricta de tipos
+    "forceConsistentCasingInFileNames": true,     // Requiere consistencia en mayúsculas/minúsculas en los nombres de archivos
+    "noFallthroughCasesInSwitch": true,           // Evita errores de "fallthrough" en sentencias switch
+    "module": "esnext",                           // Tipo de módulo a generar
+    "moduleResolution": "node",                   // Resuelve módulos al estilo Node.js
+    "resolveJsonModule": true,                    // Permite la importación de archivos JSON
+    "isolatedModules": true,                      // Tratamiento independiente de módulos
+    "noEmit": true,                               // No genera archivos de salida (compilación solo para verificación)
+    "jsx": "react-jsx"                            // Habilita el uso de JSX en React
+  },
+  "include": ["src"],                             // Define los archivos a incluir (generalmente la carpeta "src")
+  "exclude": ["node_modules"]                     // Excluye la carpeta node_modules de la compilación
+}
