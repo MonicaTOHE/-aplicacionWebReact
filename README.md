@@ -1,50 +1,53 @@
-# React + TypeScript + Vite
+README.md
+markdown
+Copiar código
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Aplicación de Gatitos 🐱
 
-Currently, two official plugins are available:
+Esta es una aplicación web simple construida con React y Vite, que muestra una imagen aleatoria de un gato cada vez que haces clic en un botón.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descripción
 
-## Expanding the ESLint configuration
+La aplicación utiliza una API gratuita para obtener fotos de gatos de manera aleatoria. Cada vez que haces clic en "Ver otra imagen de gato", la página se actualiza con una nueva foto de un gatito. Es ideal para los amantes de los gatos que quieren ver fotos adorables de gatitos con solo un clic.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalación
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/tu-usuario/aplicacionWebReact.git
+   Navega al directorio del proyecto:
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+bash
+Copiar código
+cd aplicacionWebReact
+Instala las dependencias:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+bash
+Copiar código
+npm install
+Ejecuta el proyecto en modo de desarrollo:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+bash
+Copiar código
+npm run dev
+Esto abrirá la aplicación en tu navegador en http://localhost:3000.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Construye el proyecto para producción:
+
+bash
+Copiar código
+npm run build
+Uso
+En la página principal, verás el título "Mi Aplicación de Gatitos".
+Bajo el título, verás una imagen de un gato aleatorio y un botón que dice "Ver otra imagen de gato".
+Haz clic en el botón para obtener una nueva imagen de gato al azar.
+Tecnología
+Este proyecto está construido con:
+
+React: Para la estructura y componentes de la interfaz.
+Vite: Como herramienta de desarrollo y construcción rápida para proyectos modernos de JavaScript.
+Tailwind CSS: Para el diseño y estilo sencillo y moderno de la página.
+Ejemplo en Vivo
+Puedes ver la aplicación en funcionamiento aquí: GitHub Pages
+https://monicatohe.github.io/-aplicacionWebReact/
