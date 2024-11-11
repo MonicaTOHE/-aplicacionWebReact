@@ -1,6 +1,6 @@
+// src/App.tsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from '../components/Home';
+import { BrowserRouter as Router, Routes, Route,  } from 'react-router-dom';
 import CatImage from '../components/CatImage';
 import ErrorBoundary from '../components/ErrorBoundary';
 import './index.css';
@@ -8,17 +8,15 @@ import './index.css';
 function App() {
   return (
     <Router>
-      <div className="text-center p-4">
-        <h1 className="text-3xl font-bold mb-6">Mi Aplicación de gatitos</h1>
-        {/* Enlaces de navegación */}
-        <nav>
-          <Link to="/" className="mr-4">Inicio</Link>
-          <Link to="/cats"> Ver Imagen de gatitos</Link>
-        </nav>
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white p-6">
+        <h1 className="text-4xl font-bold mb-8">Mi Aplicación de Gatitos</h1>
+
+
+
         <ErrorBoundary>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/cats" element={<CatImage />} />
+            {/* Ruta principal que muestra inmediatamente las imágenes de gatos */}
+            <Route path="/" element={<CatImage />} />
           </Routes>
         </ErrorBoundary>
       </div>
@@ -27,6 +25,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
