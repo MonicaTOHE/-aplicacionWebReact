@@ -1,6 +1,6 @@
 // src/App.tsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route,  } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import CatImage from '../components/CatImage';
 import ErrorBoundary from '../components/ErrorBoundary';
 import './index.css';
@@ -11,11 +11,8 @@ function App() {
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white p-6">
         <h1 className="text-4xl font-bold mb-8">Mi Aplicación de Gatitos</h1>
 
-
-
         <ErrorBoundary>
           <Routes>
-            {/* Ruta principal que muestra inmediatamente las imágenes de gatos */}
             <Route path="/" element={<CatImage />} />
           </Routes>
         </ErrorBoundary>
@@ -25,6 +22,8 @@ function App() {
 }
 
 export default App;
+
+
 
 
 
